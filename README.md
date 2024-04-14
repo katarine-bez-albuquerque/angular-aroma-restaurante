@@ -2,7 +2,7 @@
 
 <img src="./images/banner.png" alt="Banner" width="100%"/>
 
-Acesse o Projeto: [Aroma Restaurante Angular]()
+Acesse o Projeto: [Aroma Restaurante Angular](https://aroma-restaurante.vercel.app/)
 
 ## Sobre o projeto
 
