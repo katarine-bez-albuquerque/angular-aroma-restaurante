@@ -1,0 +1,485 @@
+@font-face {
+    font-family: "Allura", sans-serif;
+    src: url('./assets/fonts/Allura-Regular.woff2');
+}
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url('./assets/fonts/Roboto-Regular.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline: 0 none;
+    letter-spacing: 0.1em;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.2em;
+    font-weight: 700;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body,
+#page {
+    width: 100vw;    
+}
+
+body {
+    height: 100vh;
+}
+
+#page {
+    height: auto;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a, button, input, h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+h1 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.8em;
+    font-family: "Allura", sans-serif;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+@media(max-width: 992px) {
+    #page {
+        font-size: 1.2vw;
+    }
+}
+
+@media(max-width: 768px) {
+    #page {
+        font-size: 2.5vw;
+    }
+}
+
+@media(max-width: 468px) {
+    #page {
+        font-size: 3.5vw;
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 12vh;
+    padding: 0.2em 5em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #67704F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.navbar img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5em;
+}
+
+.navbar ul li {
+    padding: 0.2em;
+}
+
+.navbar ul li a,
+.navbar ul li a:link,
+.navbar ul li a:visited,
+.navbar ul li a:active {
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header article {
+    height: 100%;
+    padding-top: 7em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 100%;
+    height: 3vh;
+}
+
+.header h1,
+.header h2 {
+    color: #FFF;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 5em;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0.5);
+}
+
+.about article a img {
+    width: 32px;
+    height: auto;
+}
+
+.aboutProducts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutProducts section {
+    width: 33%;
+    height: auto;
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutProducts section header img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: 1.5em;
+}
+
+.aboutProducts section header {
+    background-color: #FFF;
+}
+
+.aboutProducts section {
+    color: #FFF;
+}
+
+.aboutProducts section:nth-child(1) {
+    background-color: #C5A98C;
+}
+
+.aboutProducts section:nth-child(2) {
+    background-color: #67704F;
+}
+
+.aboutProducts section:nth-child(3) {
+    background-color: #6E553E;
+}
+
+.aboutProducts section article {
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.aboutProducts section article h4 {
+    margin-bottom: 0.25em;
+}
+
+.products {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6E553E;
+}
+
+.products article {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+}
+
+.products article:nth-child(2) {
+    padding: 5em;
+    box-sizing: border-box;
+}
+
+.products article button {
+    width: 150px;
+    height: auto;
+    padding: 0.5em;
+    margin: 0 auto;
+    background-color: #e2e2e2;
+    color: #6E553E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.products article button:hover {
+    background-color: #C5A98C;
+    color: #FFF;
+}
+
+.products article h3 {
+    margin-bottom: 0.5em;
+}
+
+.products article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+}
+
+.local {
+    width: 100%;
+    height: auto;
+    padding: 3em 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.local article {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #C5A98C;
+    color: #FFF;
+}
+
+.local article section h3 {
+    margin-bottom: 0.5em;
+}
+
+.local article section {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+}
+
+.local article section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.local article:nth-child(2) {
+    padding: 5em 0;
+    background-color: #FFF;
+}
+
+.local article:nth-child(2) img {
+    width: auto;
+    height: 32px;  
+}
+
+.local article:nth-child(2) a {
+    margin: 0 0.25em;
+}
+
+.local article:nth-child(2) a,
+.local article:nth-child(2) a:link,
+.local article:nth-child(2) a:visited,
+.local article:nth-child(2) a:active {
+    color: #67704F;
+}
+
+.footer {
+    width: 100vw;
+    height: 150px;
+    padding: 0 5em;
+    box-sizing: border-box;
+    background-color: #67704F;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a,
+.footer a:link,
+.footer a:visited,
+.footer a:active {
+    color: #FFF;
+}
+
+.footer article {
+    width: 33%;
+    height: auto;
+    text-align: center;
+}
+
+.footer article img {
+    width: 100px;
+    height: auto;
+}
+
+@media(max-width: 1280px) {
+    .footer article {
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 786px) {
+    .navbar {
+        height: auto;
+        padding: 1em 5em;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        gap: 0.2em;
+        padding: 1em 0;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .aboutProducts {
+        flex-direction: column;
+    }
+
+    .aboutProducts section header img {
+        width: 50%;
+    }
+
+    .aboutProducts section {
+        width: 75%;
+    }
+
+    .products  {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .products article {
+        width: 100%;
+    }
+
+    .local {
+        height: auto;
+    }
+
+    .local article {
+        flex-direction: column;
+    }
+
+    .local article:nth-child(2) {
+        flex-direction: row;
+    }
+
+    .local article section {
+        width: 100%;
+    }
+
+    .local article:nth-child(2) img {
+        height: 24px;  
+    }
+
+    .local article section:nth-child(2) {
+        padding: 5em;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        height: auto;
+        gap: 1em;
+        flex-direction: column;
+        padding: 1em 0;
+    }
+
+    .footer article img {
+        width: 80px;
+    }
+
+    .footer article {
+        width: 100%;
+        padding-top: 0.5em;
+        flex-direction: column;
+    }
+
+    .footer article:nth-child(1) {
+        order: 2;
+    }
+}
